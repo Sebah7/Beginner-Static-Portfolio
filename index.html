@@ -3,150 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Different fonts and emojis-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Nova+Square&display=swap" rel="stylesheet">
+    <!-- Font awsome classes to create icons from cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="create.css">
     <!-- for icon on the page title-->
-    <link rel="icon" type="image/png" href="images/icon.png">
-    <title>Sebah Abubeker | Portifolio</title>
+    <link rel="icon" type="image/png" href="materials/icon.png">
+    <title>Portfolio | Sebah Abubeker</title>
 </head>
 <body>
-        <section class="head"> <!-- Not sure if class is nessasry here -->
 
-            <!-- <nav class="nav">
-              <ul class="navButtons">
-                <li><a href="#About">About me</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Experince">Experince</a></li>
-                <li><a href="#Language">Language</a></li>
-                <li><a href="#Reference">Reference</a></li>
-              </ul>
-            </nav> -->
-            <div class="navbar">
-                <div class="container flex"> <!-- flex class to create a flex box-->
-                  <h1 class="logo">Sebah Abubeker.</h1>
-                  <nav>
-                   <ul>
-                    <li><a href="#About">About me</a></li>
-                    <li><a href="#Education">Education</a></li>
-                    <li><a href="#Experince">Experince</a></li>
-                    <li><a href="#Language">Language</a></li>
-                    <li><a href="#Reference">Reference</a></li>
-                  </ul>
-                 </nav>
-                </div>
-            </div>
-        </section>
+<!-- Home -->
+<section id="Home">
+    <div class="container">
+        <nav>
+            <img src="materials/logopink.png" alt="Logo with the name Sebah Abubeker">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
 
- <br>
+        <div class="Hero-container">
 
- <div class="containerMain">
-<section class="column leftside">
-<div id="About">
+        <header>
+            <h1>Fullstack Web Developer</h1>
+            <p>Hello World! I'm <span>Sebah</span> <br> This is my Portfolio!</p>
+        <img src="materials/Head1.png" alt="Profile picture of Sebah">
+        </header>
+        <!-- Profile -->
+        <div class="profile-video">
+            <video src="materials/Hire.mp4" alt="A funny video asking the reader to hire me" controls></video>
+          </div>
 
-<div>
-    <h3>About me</h3>
-    <div class="headimg"><img src="images/Head1.jpg" 
-        alt="Image of Sebah" width="200"></div>
-    <p>Text on who and why</p>
-    <p>Text on passion</p>
-</div>
-<h4>different parts</h4>
-<div class="container">
-    <div class="Card">
-        <div class="Cardimg">
-        <img src="images/learn.gif" alt="Picture of learning">
-        <h4>learning</h4>
-        <p>Care for learning new things and bla bla blu</p>
-        <button type="button">Click me</button>
-    </div>
-    </div>
-    <div class="Card">
-        <div class="Cardimg">
-        <img src="images/miljo.png" alt="Picture of recycleing">
-        <div class="Cardbody">
-            <h4>Care for nature</h4>
-            <p>Care for nature and taking care of earth and the suroundings</p>
-            <button type="button">Click me</button>
         </div>
-        </div>
-    </div>
-    <div class="Card">
-        <div class="Cardimg">
-            <img src="images/volunteering.avif" alt="People volunteering">
-            <div class="Cardbody">
-                <h4>Volunteering</h4>
-                <p>Passionate about volunteering and bringning up the socity as a whole and women experince in specific</p>
-                <button type="button">Click me</button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
 
- <br>
-
-    <section id="Education">
-        <h3>Education</h3>
-      <dl>
-        <dt>Chas Acadmy</dt>
-            <dd>Fullstack Webb developer</dd>
-        <dt>Astar</dt>
-            <dd>Programering 1</dd>
-        <dt>Södertörns folkhögskola</dt>
-            <dd>Allmän Kurs</dd>
-      </dl>
-    </section>
+        </div>
 </section>
- <br>
 
- <div class="column rightside">
-    <div id="Experince">
-        <h3>Experince</h3>
-        <table class="Exdetails">
-         <tbody>
-            <tr>
-                <th scope="rowgroup">
-                    <p class="tablehead">First Jobb</p>
-                    <p class="tablebody">Worked at a place of places where people do go and come back it waas a place</p>
-                </th>
+<!-- About -->
+<section id="About">
+</section>
 
-            </tr>
-            <tr>
-                <th scope="rowgroup">
-                    <p class="tablehead">Second Jobb</p>
-                    <p class="tablebody">Worked at a place of places where people do go and come back it waas a place</p>
-                </th>
-            </tr>
-            <tr>
-                <th scope="rowgroup">
-                    <p class="tablehead">Third Jobb</p>
-                    <p class="tablebody">Worked at a place of places where people do go and come back it waas a place</p>
-                </th>
-            </tr>
-         </tbody>
-        </table>
-<br>
-    <section id="Language">
-        <div class="languagelist">
-            <h3>Language</h3>
-        <ol class="ollanguage">
-            <li>Swedish</li>
-            <li>English</li>
-            <li>Arabic</li>
-            <li>Tigrigna</li>
-        </ol>
-    </div>
-    </section>
-<br>
-    <section id="Refernce">
-<p>Provided uppon request</p>
-    </section>
-</div>
-</div>
-</div>
+<!-- Skills -->
+<section id="Skills">
+</section>
+
+<!-- Contact -->
+<section id="Contact">
+</section>
+
 </body>
-
 </html>
