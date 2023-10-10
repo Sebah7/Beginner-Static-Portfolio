@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font awsome classes to create icons from cdnjs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="style.css">
     <!-- for icon on the page title-->
     <link rel="icon" type="image/png" href="materials/icon.png">
     <title>Portfolio | Sebah Abubeker</title>
@@ -16,7 +16,7 @@
 <section id="Home">
     <div class="container">
         <nav>
-            <img src="materials/logopink.png" alt="Logo with the name Sebah Abubeker">
+            <img src="images/logopink.png" alt="Logo with the name Sebah Abubeker">
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -25,25 +25,87 @@
             </ul>
         </nav>
 
-        <div class="Hero-container">
+        <div class="not-nav-home">
 
-        <header>
+        <header class="left-home">
             <h1>Fullstack Web Developer</h1>
             <p>Hello World! I'm <span>Sebah</span> <br> This is my Portfolio!</p>
-        <img src="materials/Head1.png" alt="Profile picture of Sebah">
+        <img src="images/Head1.png" alt="Profile picture of Sebah">
         </header>
-        <!-- Profile -->
-        <div class="profile-video">
-            <video src="materials/Hire.mp4" alt="A funny video asking the reader to hire me" controls></video>
+        <div class="right-home">
+            <video src="images/Hire.mp4" alt="A video asking the visitor of the website to hire me" controls></video>
           </div>
-
         </div>
-
         </div>
 </section>
 
 <!-- About -->
 <section id="About">
+    <div class="container">
+        <div class="left-about">
+            <h1>About Me</h1>
+            <p>I am a <span>Fullstack Web Developer!</span> I have intrest in making the world a better place and I do that through fighting for a more welcoming socity, healty individuals and clean earth!</p>
+            <table>
+                <thead class="table-head">
+                    <tr>
+                        <th scope="row" colspan="3">Area of Intrest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-title">
+                        <th scope="row">Volunteer</th>
+                        <th scope="row">Environment</th>
+                        <th scope="row">Integration</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Nya Kompis Byrån</li>
+                                <li>Framtidsprogrammet</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Reduce, Reuse, Recycle</li>
+                                <li>Plantning Trees</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Quadrilingual</li>
+                                <li>Participate in Integration Events</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="right-about-gallery">
+        <div class="right-about">
+        </div>
+        <div class="right-gallery">
+            <figure class="gallery-objects gallery-objects--1">
+                <img src="images/NKB2.jpg" class="gallery-image" alt="Four ladies laughing in a park">
+              </figure>
+              <figure class="gallery-objects gallery-objects--2">
+                <img src="images/NKB5.jpg" class="gallery-image" alt="Selfie of Sebah infront of Framtids programmet poster">
+              </figure>
+              <figure class="gallery-objects gallery-objects--3">
+                <img src="images/NKB3.jpg" class="gallery-image" alt="A picture of SEbah and a friend in Järfalla event in Stockholm">
+              </figure>
+              <figure class="gallery-objects gallery-objects--4">
+                <img src="images/NKB1.jpg" class="gallery-image" alt="A picture of Sebah and a friend looking serious">
+              </figure>
+              <figure class="gallery-objects gallery-objects--5">
+                <iframe src="https://www.youtube.com/embed/f3urS1UbBD0?si=cv8tbFBgSBnNgvj3" 
+                class="gallery-video" alt="A youtube video with a group of women walking towards the camera" 
+                title="YouTube video from Nya Kompis Byrån"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+              </figure>
+        </div>
+    </div>
+</div>
 </section>
 
 <!-- Skills -->
