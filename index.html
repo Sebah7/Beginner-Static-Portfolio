@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website is Sebah Abubeker Portfolio created for a ChasAcadmey Fullstack Web Developer assingment.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font awsome classes to create icons from cdnjs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
@@ -13,8 +14,8 @@
 <body>
 
 <!-- Home -->
-<section id="Home">
-    <div class="container">
+<header>
+
         <nav>
             <img src="images/logopink.png" alt="Logo with the name Sebah Abubeker">
             <ul>
@@ -25,19 +26,28 @@
             </ul>
         </nav>
 
+ </header>
+<main>
+<section id="Home">
+
+    <div class="container">
+
         <div class="not-nav-home">
 
-        <header class="left-home">
+        <article class="left-home">
             <h1>Fullstack Web Developer</h1>
             <p>Hello World! I'm <span>Sebah</span> <br> This is my Portfolio!</p>
-        <img src="images/Head1.png" alt="Profile picture of Sebah">
-        </header>
-        <div class="right-home">
+        <img src="images/Head1.png" alt="Profile picture of Sebah" loading="lazy">
+        </article>
+
+        <aside class="right-home">
             <video src="images/Hire.mp4" alt="A video asking the visitor of the website to hire me" controls></video>
-          </div>
+        </aside>
+
         </div>
         </div>
 </section>
+</main>
 
 <!-- About -->
 <section id="About">
@@ -45,17 +55,17 @@
         <div class="left-about">
             <h1>About Me</h1>
             <p>I am a <span>Fullstack Web Developer!</span> I have intrest in making the world a better place and I do that through fighting for a more welcoming socity, healty individuals and clean earth!</p>
-            <table>
+            <table >
+                <caption>
+                    Area of Intrest
+                </caption>
                 <thead class="table-head">
-                    <tr>
-                        <th scope="row" colspan="3">Area of Intrest</th>
-                    </tr>
                 </thead>
                 <tbody>
                     <tr class="table-title">
-                        <th scope="row">Volunteer</th>
-                        <th scope="row">Environment</th>
-                        <th scope="row">Integration</th>
+                        <th scope="col">Volunteer</th>
+                        <th scope="col">Environment</th>
+                        <th scope="col">Integration</th>
                     </tr>
                     <tr>
                         <td>
@@ -86,16 +96,16 @@
         </div>
         <div class="right-gallery">
             <figure class="gallery-objects gallery-objects--1">
-                <img src="images/NKB2.jpg" class="gallery-image" alt="Four ladies laughing in a park">
+                <img src="images/NKB2.jpg" class="gallery-image1" alt="Four ladies laughing in a park" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--2">
-                <img src="images/NKB5.jpg" class="gallery-image" alt="Selfie of Sebah infront of Framtids programmet poster">
+                <img src="images/NKB5.jpg" class="gallery-image2" alt="Selfie of Sebah infront of Framtids programmet poster" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--3">
-                <img src="images/NKB3.jpg" class="gallery-image" alt="A picture of SEbah and a friend in Järfalla event in Stockholm">
+                <img src="images/NKB3.jpg" class="gallery-image3" alt="A picture of Sebah and a friend in Järfalla event in Stockholm" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--4">
-                <img src="images/NKB1.jpg" class="gallery-image" alt="A picture of Sebah and a friend looking serious">
+                <img src="images/NKB1.jpg" class="gallery-image4" alt="A picture of Sebah and a friend looking serious" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--5">
                 <iframe src="https://www.youtube.com/embed/f3urS1UbBD0?si=cv8tbFBgSBnNgvj3" 
@@ -108,8 +118,165 @@
 </div>
 </section>
 
-<!-- Skills -->
+<!-- Skills / cards -->
 <section id="Skills">
+
+    <article class="Card-container">
+        <figure class="card-body-img">
+            <img src="images/study.jpg" alt="image of a tody reading" class="card-img" loading="lazy">
+        </figure>
+        <div class="card-info">
+            <header class="card-info-text">
+                <h1 class="card-title">Education</h1>
+            </header>
+
+            <ul class="card-skill">
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">ChasAcadmey</strong>
+                        <span class="card-skill-subtitle">Fullstack Web Developer</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-20"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">Södertorn Folkhögskola</strong>
+                        <span class="card-skill-subtitle">Allmänkurs</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-100"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">Eritrean International School</strong>
+                        <span class="card-skill-subtitle">Highschool</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-100"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+
+    <article class="Card-container">
+        <figure class="card-body-img">
+            <img src="images/lang.jpg" alt="image of code" class="card-img" loading="lazy">
+        </figure>
+
+        <div class="card-info">
+            <header class="card-info-text">
+                <h1 class="card-title">Language</h1>
+            </header>
+
+            <ul class="card-skill">
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">HTML</strong>
+                        <span class="card-skill-subtitle">50%</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-50"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">CSS</strong>
+                        <span class="card-skill-subtitle">60%</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-50"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">English</strong>
+                        <span class="card-skill-subtitle">95%</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-95"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">Swedish</strong>
+                        <span class="card-skill-subtitle">80%</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-80"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">Arabic</strong>
+                        <span class="card-skill-subtitle">95%</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-95"></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </article>
+
+    <article class="Card-container">
+        <figure class="card-body-img">
+            <img src="images/work.jpg" alt="image of a lego working" class="card-img" loading="lazy">
+        </figure>
+
+        <div class="card-info">
+            <header class="card-info-text">
+                <h1 class="card-title">Experince</h1>
+            </header>
+
+            <ul class="card-skill">
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">Vuxen Utbuildnign Järva</strong>
+                        <span class="card-skill-subtitle">IT-värd</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-80"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">H&amp;M</strong>
+                        <span class="card-skill-subtitle">Warehouse</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-100"></div>
+                    </div>
+                </li>
+
+                <li class="card-skill-item">
+                    <div class="card-skill-info">
+                        <strong class="card-skill-info">ZAD</strong>
+                        <span class="card-skill-subtitle">Quality Assurance</span>
+                    </div>
+                    <div class="card-skill-bar-body">
+                        <div class="card-skill-bar-95"></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </article>
     </section>
 
 <!-- Contact -->
@@ -142,7 +309,6 @@
 
     <footer class="copyright">
         <p>Copyright Sebah. Made for chasacademy <i class="fa-solid fa-school"></i> Assingment</p>
-
     </footer>
 
 </body>
