@@ -655,6 +655,7 @@ form .btn2 {
     
             .card-img {
                 height: 100%;
+                padding: 20px;
             }
         
             /*  Contact section */
@@ -671,7 +672,7 @@ form .btn2 {
             }
         
             .contact-right {
-                margin-top: 20px; 
+                margin-top: 1px; 
             }
 
             .contact-left p {
@@ -691,6 +692,7 @@ form .btn2 {
             .contact-right form {
                 margin-top: 30px;
             }
+
         
             form input, form textarea {
                 font-size: 16px;
