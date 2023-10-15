@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <!-- for icon on the page title-->
-    <link rel="icon" type="image/png" href="materials/icon.png">
+    <link rel="icon" type="image/png" href="images/icon.png">
     <title>Portfolio | Sebah Abubeker</title>
 </head>
 <body>
@@ -37,17 +37,19 @@
         <article class="left-home">
             <h1>Fullstack Web Developer</h1>
             <p>Hello World! I'm <span>Sebah</span> <br> This is my Portfolio!</p>
-        <img src="images/Head1.png" alt="Profile picture of Sebah" loading="lazy">
+        <img src="images/Head1.png"
+             srcset="images/Head1-200px.png 200w"
+             sizes="(mix-width: 390px) 100vw, 50vw"
+        alt="Profile picture of Sebah" loading="lazy">
         </article>
 
         <aside class="right-home">
-            <video src="images/Hire.mp4" alt="A video asking the visitor of the website to hire me" controls></video>
+            <video src="images/Hire.mp4" alt="A video asking the visitor of the website to hire me" controls loading="lazy"></video>
         </aside>
 
         </div>
         </div>
 </section>
-</main>
 
 <!-- About -->
 <section id="About">
@@ -57,21 +59,19 @@
             <p>I am a <span>Fullstack Web Developer!</span> I have intrest in making the world a better place and I do that through fighting for a more welcoming socity, healty individuals and clean earth!</p>
             <table >
                 <caption>
-                    Area of Intrest
+                    <h3>Area of Intrest</h3>
                 </caption>
-                <thead class="table-head">
-                </thead>
                 <tbody>
                     <tr class="table-title">
                         <th scope="col">Volunteer</th>
                         <th scope="col">Environment</th>
                         <th scope="col">Integration</th>
                     </tr>
-                    <tr>
+                    <tr class="table-content">
                         <td>
                             <ul>
                                 <li>Nya Kompis Byrån</li>
-                                <li>Framtidsprogrammet</li>
+                                <li>Framtids<br>programmet</li>
                             </ul>
                         </td>
                         <td>
@@ -83,7 +83,7 @@
                         <td>
                             <ul>
                                 <li>Quadrilingual</li>
-                                <li>Participate in Integration Events</li>
+                                <li>Integration Events</li>
                             </ul>
                         </td>
                     </tr>
@@ -96,22 +96,34 @@
         </div>
         <div class="right-gallery">
             <figure class="gallery-objects gallery-objects--1">
-                <img src="images/NKB2.jpg" class="gallery-image1" alt="Four ladies laughing in a park" loading="lazy">
+                <img src="images/NKB2.jpg" 
+                srcset="images/NKB2-90px.jpg 90w"
+                sizes="(mix-width: 390px) 100vw, 50vw"
+                class="gallery-image1" alt="Four ladies laughing in a park" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--2">
-                <img src="images/NKB5.jpg" class="gallery-image2" alt="Selfie of Sebah infront of Framtids programmet poster" loading="lazy">
+                <img src="images/NKB5.jpg" 
+                srcset="images/NKB5-90px.jpg 90w"
+                sizes="(mix-width: 390px) 100vw, 50vw"
+                class="gallery-image2" alt="Selfie of Sebah infront of Framtids programmet poster" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--3">
-                <img src="images/NKB3.jpg" class="gallery-image3" alt="A picture of Sebah and a friend in Järfalla event in Stockholm" loading="lazy">
+                <img src="images/NKB3.jpg" 
+                srcset="images/NKB3-183px.jpg 183w"
+                sizes="(mix-width: 390px) 100vw, 50vw"
+                class="gallery-image3" alt="A picture of Sebah and a friend in Järfalla event in Stockholm" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--4">
-                <img src="images/NKB1.jpg" class="gallery-image4" alt="A picture of Sebah and a friend looking serious" loading="lazy">
+                <img src="images/NKB1.jpg" 
+                srcset="images/NKB1-183px.jpg 183w"
+                sizes="(mix-width: 390px) 100vw, 50vw"
+                class="gallery-image4" alt="A picture of Sebah and a friend looking serious" loading="lazy">
               </figure>
               <figure class="gallery-objects gallery-objects--5">
                 <iframe src="https://www.youtube.com/embed/f3urS1UbBD0?si=cv8tbFBgSBnNgvj3" 
                 class="gallery-video" alt="A youtube video with a group of women walking towards the camera" 
                 title="YouTube video from Nya Kompis Byrån"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                allow="accelerometer; autoplay; encrypted-media; picture-in-picture;" loading="lazy"></iframe>
               </figure>
         </div>
     </div>
@@ -123,7 +135,10 @@
 
     <article class="Card-container">
         <figure class="card-body-img">
-            <img src="images/study.jpg" alt="image of a tody reading" class="card-img" loading="lazy">
+            <img src="images/study.jpg" 
+            srcset="images/study-250px.jpg 376w"
+            sizes="(mix-width: 390px) 100vw, 50vw"
+            alt="image of a toy reading" class="card-img" loading="lazy">
         </figure>
         <div class="card-info">
             <header class="card-info-text">
@@ -168,7 +183,10 @@
 
     <article class="Card-container">
         <figure class="card-body-img">
-            <img src="images/lang.jpg" alt="image of code" class="card-img" loading="lazy">
+            <img src="images/lang.jpg" 
+            srcset="images/lang-250px.jpg 373w"
+            sizes="(mix-width: 390px) 100vw, 50vw"
+            alt="image of code" class="card-img" loading="lazy">
         </figure>
 
         <div class="card-info">
@@ -234,7 +252,10 @@
 
     <article class="Card-container">
         <figure class="card-body-img">
-            <img src="images/work.jpg" alt="image of a lego working" class="card-img" loading="lazy">
+            <img src="images/work.jpg" 
+            srcset="images/work-250px.jpg 374w"
+            sizes="(mix-width: 390px) 100vw, 50vw"
+            alt="image of a lego working" class="card-img" loading="lazy">
         </figure>
 
         <div class="card-info">
@@ -293,7 +314,7 @@
         <a href="https://www.instagram.com/chasacademy/" aria-label="Link to chas-academy instagram" target="_blank"><i class="fab fa-instagram" ></i></a>
         <a href="https://www.linkedin.com/in/sebah-ismail-abubeker-361633bb/" aria-label="Link to Sebah Abubeker linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    <a href="images/CV.pdf" download class="btn btn2" aria-label="Link to download CV">Download CV</a>
+    <a href="images/CV.zip" download class="btn btn2" aria-label="Link to download CV">Download CV</a>
         </div>
         <div class="contact-right">
             <form action="mailto:sebah.abubeker@chasacademy.se" method="post" enctype="text/plain">
@@ -306,6 +327,7 @@
     </div>
     </div>
     </section>
+</main>
 
     <footer class="copyright">
         <p>Copyright Sebah. Made for chasacademy <i class="fa-solid fa-school"></i> Assingment</p>
