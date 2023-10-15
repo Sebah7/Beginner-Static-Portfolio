@@ -14,10 +14,11 @@
     padding: 0;
     margin: 0;
     font-family: 'Flamenco', cursive , cambria, sans-serif;
+    font-display: fallback;
 }
 
 body {
-    background-color: #000;
+    background-color: #000000e4;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -80,7 +81,9 @@ span {
      }
 
      nav img {
-        width: 60px;
+        margin-left: 20px;
+        max-width: 60px;
+        max-height: 60px;
         height: auto;
      }
     
@@ -130,11 +133,11 @@ span {
     border-radius: 20%;
     text-align: right;
     overflow: visible;
-    margin-top: 200px;
  }
 
  .right-home video {
-    width: 100%;
+    margin: 250px 50px 50px;
+    max-width: 500px;
     box-shadow: var(--shadow);
  }
 
@@ -142,7 +145,8 @@ span {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
-    width: 40%;
+    max-width: 320px;
+    max-height: 200px;
  }
 
 /* About Section */
@@ -165,33 +169,34 @@ span {
 }
 
 .left-about table {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 90%;
-    height: 200px;
+    height: 150px;
     border-collapse: collapse;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: var(--shadow);
 }
 
-.table-head, caption {
-    margin-top: 20px;
-    font-size: 60px;
+caption {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    border-radius: 20px;
     box-shadow: var(--shadow);
 }
 
 .table-title {
-    text-align: left;
-    margin-top: 20px;
+    text-align: center;
     font-size: 30px;
+    border-radius: 20px;
     box-shadow: var(--shadow);
 }
 
-.right-about td {
-    text-align: left;
+.table-content {
+    text-align: center;
     padding: 5px 10px;
-    margin-top: 20px;
-    font-size: 30px;
-    box-shadow: var(--shadow);
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 .right-gallery {
@@ -252,20 +257,20 @@ span {
     
 }
 .gallery-objects--1:hover .gallery-image1 {
-    transform: scale(1.2);
+    transform: scale(2);
     border-radius: 20px;
 }
 .gallery-objects--2:hover .gallery-image2 {
-    transform: scale(1.2);
+    transform: scale(2);
     border-radius: 20px;
 }
 .gallery-objects--3:hover .gallery-image3 {
-    transform: scale(1.2);
+    transform: scale(2);
     border-radius: 20px;
 }
 
 .gallery-objects--4:hover .gallery-image4 {
-    transform: scale(1.2);
+    transform: scale(2);
     border-radius: 20px;
 }
 
@@ -505,17 +510,19 @@ form .btn2 {
     and (-webkit-device-pixel-ratio: 3) 
     {
 
+        
             body {
+                height:100%;
                 font-size: 18px;
             }
         
             h1 {
                 font-size: 36px;
-                margin-top: 100px;
+                margin-top: 80px;
             }
         
             p {
-                font-size: 29px;
+                font-size: 25px;
                 margin-top: 20px;
                 margin-bottom: 10px;
             }
@@ -532,7 +539,10 @@ form .btn2 {
             }
             
      nav img {
-        width: 40px;
+        margin-left: 0px;
+        margin-right: 5px;
+        max-width: 40px;
+        max-height: 40px;
      }
     
      nav ul li {
@@ -552,6 +562,7 @@ form .btn2 {
             }
         
             .not-nav-home {
+                margin: 10px;
                 flex-direction: column;
                 align-items: center;
             }
@@ -561,7 +572,8 @@ form .btn2 {
             }
         
             .left-home img {
-                width: 70%;
+                margin: 15px 0px 15px;
+                max-height: 200px;
             }
         
             .right-home {
@@ -569,6 +581,9 @@ form .btn2 {
             }
         
             .right-home video {
+                width: 100%;
+                height: 100%;
+                margin: 15px 0px 15px;
                 box-shadow: none;
             }
         
@@ -580,7 +595,6 @@ form .btn2 {
             }
 
             .right-gallery {
-                margin-top: 10px;
                 grid-template-columns: repeat(8, 1fr);
                 grid-template-rows: repeat(14, 5vw);
             }
@@ -607,29 +621,52 @@ form .btn2 {
                 grid-row-end: 15;
             }
 
-
+            .gallery-image1, .gallery-image2 {
+                max-height: 64px;
+                max-width: 90px;
+            }
+            .gallery-image3{
+                max-height: 132px;
+                max-width: 183px;
+            }
+            .gallery-image4{
+                max-height: 64px;
+                max-width: 183px;
+            }
+            .gallery-video{
+                max-height: 350;
+                max-width: 175;
+            }
             .right-about-gallery {
-                margin-bottom: 1px;
-                padding-bottom: 0px;
-                margin-top: 1px;
-                padding-top: 0px;
+                margin: 1px 0px 1px;
+                padding: 0px 0px 0px;
             }
 
             .left-about, .right-about-gallery {
                 width: 100%;
                 margin: 0;
             }
-        
+
             .left-about table {
+                margin-top: 5px;
                 width: 95%;
                 height: auto;
+                box-shadow: none;
             }
         
-            .table-head, 
-            .table-title, 
-            .right-about, td, caption {
+            caption {
+                margin-top: 5px;
+            }
+
+            .table-title, caption {
                 font-size: 18px;
-                justify-content: space-between;
+            }
+
+            .table-content ul {
+                margin-left: 5px;
+                font-size: 16px;
+                box-shadow: var(--shadow);
+                border-radius: 10px;
             }
         
             .right-gallery {
@@ -643,6 +680,20 @@ form .btn2 {
                 object-fit: cover;
                 display: block;
             }
+
+            .gallery-objects--1:hover .gallery-image1 {
+                transform: scale(1.2);
+            }
+            .gallery-objects--2:hover .gallery-image2 {
+                transform: scale(1.2);
+            }
+            .gallery-objects--3:hover .gallery-image3 {
+                transform: scale(1.2);
+            }
+            
+            .gallery-objects--4:hover .gallery-image4 {
+                transform: scale(1.2);
+            }
         
             /* Skills section */
             #Skills {
@@ -654,7 +705,9 @@ form .btn2 {
             }
     
             .card-img {
-                height: 100%;
+                width: 90%;
+                max-height: 250px;
+                max-width: 320px;
                 padding: 20px;
             }
         
@@ -680,17 +733,18 @@ form .btn2 {
             }
         
             .social-icons a {
+                margin-top: 10px;
                 font-size: 24px;
             }
         
             .btn {
-                margin: 20px auto;
+                margin: 10px auto;
                 padding: 10px 40px;
                 font-size: 18px;
             }
         
             .contact-right form {
-                margin-top: 30px;
+                margin-top: 10px;
             }
 
         
@@ -705,7 +759,7 @@ form .btn2 {
         
             /* Footer */
             .copyright {
-                height: auto;
+                height: 10px;
                 font-weight: 100;
             }
             .copyright i {
