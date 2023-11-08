@@ -3,7 +3,7 @@
 
 /* the colors I'm going to use */
 :root {
-    --text-gradiant: -webkit-linear-gradient(#cbf33d,#b15db5);
+    --text-gradiant: linear-gradient(to right, #cbf33d,#b15db5);
     --purple-pink: #b15db5;
     --shadow: 0px 0px 10px var(--purple-pink);
 }
@@ -14,7 +14,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Flamenco', cursive , cambria, sans-serif;
-    font-display: fallback;
+    /*font-display: fallback; Property doesn't exist */
 }
 
 body {
@@ -42,6 +42,21 @@ h1 {
     font-size: 60px;
  }
 
+ h2 {  
+    margin-top: 100px;
+    font-size: 60px;
+ }
+ .h1-validate {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+ }
+
  p {
     margin-top: 50px;
     font-size: 30px;
@@ -49,10 +64,11 @@ h1 {
  }
 
 span {
-    background: var(--text-gradiant);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
+background-image: var(--text-gradiant);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
 }
 
 /* Home Section */
@@ -129,7 +145,7 @@ span {
 
  .right-home {
     flex: 1;
-    width: 50%;
+    width: 45%;
     border-radius: 20%;
     text-align: right;
     overflow: visible;
@@ -289,12 +305,13 @@ caption {
     flex-wrap: wrap;
 }
 
-.Card-container {
+.Card-container  {
     width: 350px;
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
 }
+
 
 .card-body-img {
     height: 200px;
@@ -328,7 +345,7 @@ caption {
     color: aliceblue;
     display: flex;
     flex-direction: column;
-    gap: 2opx;
+    gap: 20px;
 }
 
 .card-skill-item {
@@ -418,7 +435,6 @@ caption {
 }
 
 .grid {
-    display: flex;
     justify-content: space-between;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -490,6 +506,7 @@ form .btn2 {
 
 /* Footer */
 
+
 .copyright {
     width: 100%;
     text-align: center;
@@ -502,11 +519,22 @@ form .btn2 {
     background: var(--text-gradiant);
 }
 
+.css-valid img {
+    border:0;
+    width:88px;
+    height:31px;
+}
+
+.html-valid {
+    border:0;
+    width: 300px;
+    height:31px;
+}
 
 /* For iPhone 12 Pro */
     @media only screen 
-    and (max-width: 390px) 
-    and (height: 844px) 
+    and (width: 390px) 
+    and (min-height: 844px) 
     and (-webkit-device-pixel-ratio: 3) 
     {
 
@@ -517,6 +545,11 @@ form .btn2 {
             }
         
             h1 {
+                font-size: 36px;
+                margin-top: 80px;
+            }
+
+            h2 {
                 font-size: 36px;
                 margin-top: 80px;
             }
@@ -634,8 +667,8 @@ form .btn2 {
                 max-width: 183px;
             }
             .gallery-video{
-                max-height: 350;
-                max-width: 175;
+                max-height: 350px;
+                width: 175px;
             }
             .right-about-gallery {
                 margin: 1px 0px 1px;
@@ -678,7 +711,7 @@ form .btn2 {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                display: block;
+                display: inherit;
             }
 
             .gallery-objects--1:hover .gallery-image1 {
